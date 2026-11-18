@@ -1,0 +1,296 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #1e293b;
+}
+
+/* BARRA DE NAVEGAÇÃO SUPERIOR */
+.navbar {
+    background-color: #0f172a; /* Azul grafite bem escuro */
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.logo i {
+    color: #00a8ff; /* Azul elétrico da marca */
+    font-size: 1.8rem;
+}
+
+.logo strong {
+    color: #00a8ff;
+}
+
+/* MENU DE NAVEGAÇÃO */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00a8ff;
+}
+
+/* BOTÕES DE LOGIN, CADASTRO E CARRINHO */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #00a8ff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #00a8ff;
+    color: #0f172a;
+}
+
+.btn-cadastrar {
+    text-decoration: none;
+    background-color: #00a8ff;
+    color: #0f172a;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: #0086cc;
+    color: #ffffff;
+}
+
+.btn-carrinho {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    transition: color 0.3s;
+}
+
+.btn-carrinho:hover {
+    color: #00a8ff;
+}
+
+/* BANNER PRINCIPAL */
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CONTAINER E GRADE DE PRODUTOS */
+.container {
+    max-width: 1250px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #0f172a;
+    border-left: 5px solid #00a8ff;
+    padding-left: 12px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARTÃO DE CADA SMARTPHONE */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ETIQUETA DE DESCONTO */
+.badge-desconto {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #10b981; /* Verde destaque para promoção */
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+/* IMAGEM CLICÁVEL */
+.img-link {
+    display: block;
+    overflow: hidden;
+    height: 220px;
+    background-color: #e2e8f0;
+}
+
+.img-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.img-link:hover img {
+    transform: scale(1.06);
+}
+
+/* INFORMAÇÕES DO PRODUTO */
+.card-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-info h3 {
+    font-size: 1.05rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+/* AVALIAÇÃO POR ESTRELAS */
+.estrelas {
+    color: #f59e0b; /* Amarelo ouro */
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.estrelas span {
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-left: 4px;
+}
+
+/* PREÇOS (NORMAL E COM DESCONTO) */
+.precos {
+    margin-top: auto;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.preco-antigo {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-decoration: line-through;
+}
+
+.preco-atual {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* BOTÃO COMPRAR / ADICIONAR AO CARRINHO */
+.btn-comprar {
+    width: 100%;
+    background-color: #0077cc;
+    color: #ffffff;
+    border: none;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #005fa3;
+}
+
+/* RODAPÉ */
+.footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE PARA TELAS MENORES */
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Mobile | Loja Oficial Android</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Biblioteca de ícones FontAwesome para estrelas, logo e carrinho -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>NEXUS<strong>MOBILE</strong></span>
+        </div>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Lançamentos</a></li>
+                <li><a href="#produtos">Linha Gamer</a></li>
+                <li><a href="#produtos">Custo-Benefício</a></li>
+                <li><a href="#produtos">Ofertas</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="#login" class="btn-login">Login</a>
+            <a href="#cadastrar" class="btn-cadastrar">Cadastrar</a>
+            <a href="#carrinho" class="btn-carrinho" title="Ver Carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section id="inicio" class="hero">
+        <h1>O Futuro do Android na Palma da Sua Mão</h1>
+        <p>Os melhores smartphones das maiores marcas globais com entrega rápida e garantia oficial.</p>
+    </section>
+
+    <!-- VITRINE DE PRODUTOS (10 SMARTPHONES) -->
+    <main id="produtos" class="container">
+        <h2 class="section-title">Nossos Smartphones</h2>
+
+        <div class="produtos-grid">
+
+            <!-- PRODUTO 1 (COM DESCONTO) -->
+            <div class="card">
+                <span class="badge-desconto">-15% OFF</span>
+                <a href="#produto1" class="img-link">
+                    <img src="img/galaxy-s24-ultra.avif" alt="Samsung Galaxy S24 Ultra">
+                </a>
+                <div class="card-info">
+                    <h3>Samsung Galaxy S24 Ultra 5G</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.9)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-antigo">R$ 7.999,00</span>
+                        <span class="preco-atual">R$ 6.799,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 2 (SEM DESCONTO) -->
+            <div class="card">
+                <a href="#produto2" class="img-link">
+                    <img src="img/Xiaomi 14 Pro Leica Edition.avif" alt="Xiaomi 14 Pro">
+                </a>
+                <div class="card-info">
+                    <h3>Xiaomi 14 Pro Leica Edition</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(4.7)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-atual">R$ 5.490,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 3 (COM DESCONTO) -->
+            <div class="card">
+                <span class="badge-desconto">-20% OFF</span>
+                <a href="#produto3" class="img-link">
+                    <img src="img/Motorola Edge 50 pro 512GB.avif" alt="Motorola Edge 50 Pro">
+                </a>
+                <div class="card-info">
+                    <h3>Motorola Edge 50 Pro 512GB</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(4.2)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-antigo">R$ 3.999,00</span>
+                        <span class="preco-atual">R$ 3.199,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 4 (SEM DESCONTO) -->
+            <div class="card">
+                <a href="#produto4" class="img-link">
+                    <img src="img/Google Pixel 8 Pro 256GB.avif" alt="Google Pixel 8 Pro">
+                </a>
+                <div class="card-info">
+                    <h3>Google Pixel 8 Pro 256GB</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.8)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-atual">R$ 5.890,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 5 (COM DESCONTO) -->
+            <div class="card">
+                <span class="badge-desconto">-10% OFF</span>
+                <a href="#produto5" class="img-link">
+                    <img src="img/Asus ROG Phone 8 Gamer.avif" alt="Asus ROG Phone 8">
+                </a>
+                <div class="card-info">
+                    <h3>Asus ROG Phone 8 Gamer</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(5.0)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-antigo">R$ 6.500,00</span>
+                        <span class="preco-atual">R$ 5.850,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 6 (SEM DESCONTO) -->
+            <div class="card">
+                <a href="#produto6" class="img-link">
+                    <img src="img/OnePlus 12 5G Snapdragon.avif" alt="OnePlus 12 5G">
+                </a>
+                <div class="card-info">
+                    <h3>OnePlus 12 5G Snapdragon</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(4.6)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-atual">R$ 4.799,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 7 (COM DESCONTO) -->
+            <div class="card">
+                <span class="badge-desconto">-25% OFF</span>
+                <a href="#produto7" class="img-link">
+                    <img src="img/Samsung Galaxy A55 5G 256GB.avif" alt="Samsung Galaxy A55">
+                </a>
+                <div class="card-info">
+                    <h3>Samsung Galaxy A55 5G 256GB</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(4.3)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-antigo">R$ 2.499,00</span>
+                        <span class="preco-atual">R$ 1.874,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 8 (SEM DESCONTO) -->
+            <div class="card">
+                <a href="#produto8" class="img-link">
+                    <img src="img/Realme GT 6 5G 16GB RAM.avif" alt="Realme GT 6">
+                </a>
+                <div class="card-info">
+                    <h3>Realme GT 6 5G 16GB RAM</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(4.5)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-atual">R$ 3.699,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 9 (COM DESCONTO) -->
+            <div class="card">
+                <span class="badge-desconto">-18% OFF</span>
+                <a href="#produto9" class="img-link">
+                    <img src="img/Xiaomi Poco X6 Pro 5G.avif" alt="Poco X6 Pro">
+                </a>
+                <div class="card-info">
+                    <h3>Xiaomi Poco X6 Pro 5G</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(4.9)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-antigo">R$ 2.600,00</span>
+                        <span class="preco-atual">R$ 2.132,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- PRODUTO 10 (SEM DESCONTO) -->
+            <div class="card">
+                <a href="#produto10" class="img-link">
+                    <img src="img/Samsung Galaxy Z Flip 5 Dobrável.avif" alt="Samsung Galaxy Z Flip 5">
+                </a>
+                <div class="card-info">
+                    <h3>Samsung Galaxy Z Flip 5 Dobrável</h3>
+                    <div class="estrelas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(4.4)</span>
+                    </div>
+                    <div class="precos">
+                        <span class="preco-atual">R$ 4.999,00</span>
+                    </div>
+                    <button class="btn-comprar"><i class="fa-solid fa-cart-plus"></i> Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>&copy; Nexus Mobile - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
